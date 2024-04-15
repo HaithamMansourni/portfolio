@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/LogoHaitham.png">
+
+
+    <title>Haitham MANSOURNI</title>
+
+</head>
+
+<body>
+    <header>
+        <a href="#hero" class="logo"><img src="images/LogoHaitham.png" alt="My Website Logo">
+            <div>Haitham MANSOURNI</div>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li onclick="toggleMenu()" class="able active"><a href="#hero">Accueil</a></li>
+                <li onclick="toggleMenu()" class="able"><a href="#about">À Propos</a></li>
+                <li onclick="toggleMenu()" class="able"><a href="#portfolio">Portfolio</a></li>
+                <li onclick="toggleMenu()" class="able"><a href="#skills">Compétences</a></li>
+                <li onclick="toggleMenu()" class="able"><a href="#contact">Contact</a></li>
+                <li>
+                    <div class="mode-switch" onclick="toggleMode()">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                </li>
+                <li></li>
+                <li>
+                    <a href="https://github.com/HaithamMansourni" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/haitham-mansourni-76b38b286" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="resume"><a href="CV-haithamFinal.pdf" target="_blank" download>mon CV</a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars fa-2xl menu-hamburger" onclick="toggleMenu()"></i>
+    </header>
+
+
+    <main>
+        <div class="container" id="hero">
+            <div class="div-hero">
+                <h1>FULLSTACK <span class="fontContour-rd">Developper<span></h2>
+                            <img src="images/profile.jpg" alt="Profile Image" class="hero-image" />
+            </div>
+            <p>Développeur full-stack junior en <span class="bl">Java</span> / <span class="rd">Java EE</span> ,<span
+                    class="bl">HTML</span> ,<span class="bl">CSS</span> , et
+                frameworks modernes tels que <span class="rd">Angular</span> et <span class="rd">Spring Boot</span> ,
+                en quête d’un JOB pour affiner mes compétences en développement et contribuer à des
+                projets innovants.
+                Fort d'une expérience pratique acquise à travers divers projets et stages informatiques,que vous pouvez
+                voir sur mon <a href="CV-haithamFinal.pdf" target="_blank" download><span class="bl">CV</span></a> et
+                mon <a href="#portfolio"><span class="rd">Portfolio</span></a>, je suis prêt à m’intégrer et à
+                m’impliquer
+                activement dans une équipe dynamique,
+                visant à enrichir mon expérience professionnelle en développement web et logiciel.
+            </p>
+        </div>
+        <div class="container" id="about">
+            <h2 class="fontContour-rd">À Propos</h2>
+            <div>
+                <img src="images/profile.jpg" alt="Profile Image" class="responsive-image" />
+
+
+                <p>
+                    En tant que développeur full-stack, je suis passionné par la création d'applications web innovantes
+                    et conviviales. J'ai acquis une bonne expérience en Java/Java EE, JavaScript , HTML , CSS ,
+                    Angular , Spring framework , spring boot et MySql grâce à mes études et projets personnels. Je
+                    suis prêt à relever un large
+                    éventail de défis dans le développement web, depuis la construction d'applications monolithique ,
+                    application monopages
+                    dynamiques jusqu'au développement d'APIs robustes côté serveur. Actuellement à la recherche de ma
+                    première expérience professionnelle, je suis dédié à l'apprentissage continu et à l'exploration de
+                    nouvelles technologies .
+                    <br>
+                    En plus de mes compétences techniques, je suis un apprenant à vie, explorant constamment de
+                    nouvelles technologies et les meilleures pratiques pour rester à la pointe de la technologie.
+                    Passionné de musculation et d'échecs, je trouve que ces activités m'aident à maintenir un équilibre
+                    sain entre le travail et la vie personnelle et à aborder la résolution de problèmes avec un esprit
+                    stratégique.
+                </p>
+            </div>
+
+        </div>
+        <div class="container" id="portfolio">
+            <h2 class="fontContour-bl">Portfolio</h2>
+            <div class="portfolio-grid">
+
+                <div class="portfolio-item" data-url="https://haithammansourni.github.io/todo-frontend/">
+                    <img src="images/projectTodo.png" alt="Project 1" class="portfolio-image-item" />
+                    <div>
+                        <h3>Projet Mes Tâches</h3>
+                        <p>L'application "Tâches", développée avec Angular pour l'interface utilisateur et Spring Boot
+                            pour le backend, permet une gestion efficace des tâches quotidiennes. Les utilisateurs
+                            peuvent ajouter rapidement de nouvelles tâches via un formulaire simplifié. Chaque tâche
+                            ajoutée est listée et codée en couleur : en vert pour les tâches actives et en rouge pour
+                            celles en attente. Un switch interactif permet de basculer les tâches entre 'en cours' et
+                            'réalisées', assurant une visualisation et un suivi immédiats de la progression.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="skills">
+            <h2 class="fontContour-rd">Compétences</h2>
+            <ul class="skills-list">
+                <li>Algorithmiques</li>
+                <li>Programmation procédurale</li>
+                <li>Programmation Orientée Objet</li>
+                <li>UML</li>
+                <li>Merise</li>
+                <li>Langage C</li>
+                <li>JAVA SE</li>
+                <li>JAVA EE</li>
+                <li>Spring</li>
+                <li>Spring data</li>
+                <li>Spring security</li>
+                <li>Spring boot</li>
+                <li>Lombok</li>
+                <li>JavaScript</li>
+                <li>Angular</li>
+                <li>HTML/CSS</li>
+                <li>Bootstrap</li>
+                <li>Angular Material</li>
+                <li>Git</li>
+                <li>Responsive Design</li>
+                <li>Maven</li>
+                <li>Agil Scrum</li>
+                <li>Eclipse</li>
+                <li>VScode</li>
+            </ul>
+        </div>
+
+        <div class="container" id="contact">
+            <h2 class="fontContour-bl">Contact</h2>
+            <p>Pour me contacter Voici mon Email</p>
+            <p>
+                <span class="bl">haithamokioki@gmail.com</span>
+            </p>
+            <p>Vous pouvez aussi le faire via mon
+                <a href="https://linkedin.com/in/haitham-mansourni-76b38b286" target="_blank"><span class="rd">linkedin
+                        <i class="fab fa-linkedin"></span></i></a>
+            </p>
+
+        </div>
+
+        <footer>
+            <a href="https://github.com/HaithamMansourni" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/haitham-mansourni-76b38b286" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="CV-haithamFinal.pdf" class="logo" target="_blank" download>
+                <img class="logofooter" src="images/LogoHaitham.png" alt="My Website Logo">
+                <span style="font-weight: bold;">
+                    CV
+                </span>
+            </a>
+        </footer>
+    </main>
+
+    <script>
+        function toggleMode() {
+            const body = document.documentElement;
+            const icon = document.querySelector('.mode-switch i');
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('light-mode')) {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('hai-theme', 'light');
+            } else {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('hai-theme', 'dark');
+            }
+        }
+
+        function toggleMenu() {
+            const menHamburger = document.querySelector(".menu-hamburger");
+            const navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle('mobile-menu');
+        }
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentTheme = localStorage.getItem('hai-theme');
+            const body = document.documentElement;
+            const icon = document.querySelector('.mode-switch i');
+
+            if (currentTheme) {
+                if (currentTheme === 'light') {
+                    body.classList.add('light-mode');
+                    icon.classList.replace('fa-sun', 'fa-moon');
+                } else {
+                    body.classList.remove('light-mode');
+                    icon.classList.replace('fa-moon', 'fa-sun');
+                }
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-links .able a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-links .able a');
+
+            function setActiveLink() {
+                let index = 0;
+                const sections = document.querySelectorAll('.container');
+                const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+                sections.forEach((section, i) => {
+                    if (section.offsetTop <= scrollPosition + window.innerHeight / 2) {
+                        index = i;
+                    }
+                });
+
+                navLinks.forEach((link) => {
+                    link.classList.remove('active');
+                });
+
+                if (navLinks[index]) {
+                    navLinks[index].classList.add('active');
+                }
+            }
+
+            window.addEventListener('scroll', setActiveLink);
+        });
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            portfolioItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const url = item.getAttribute('data-url');
+                    if (url) {
+                        window.open(url, '_blank');
+                    }
+                });
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>
